@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 16, 2018 2:05:21 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="myPack.Humandb" table="humandb" schema="public" optimistic-lock="version">
+        <id name="humanid" type="int">
+            <column name="humanid" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" length="50" />
+        </property>
+        <property name="size" type="java.lang.Integer">
+            <column name="size" />
+        </property>
+        <property name="posx" type="java.lang.Integer">
+            <column name="posx" />
+        </property>
+        <property name="posy" type="java.lang.Integer">
+            <column name="posy" />
+        </property>
+        <property name="time" type="string">
+            <column name="time" length="50" />
+        </property>
+        <property name="created" type="timestamp">
+            <column name="created" length="29" />
+        </property>
+    </class>
+</hibernate-mapping>

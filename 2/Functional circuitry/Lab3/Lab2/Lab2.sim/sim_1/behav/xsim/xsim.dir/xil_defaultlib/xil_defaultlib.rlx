@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v,1555584610,verilog,,,,cube_root_tb,,,,,,,,
+C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/cube_root.v,1555594133,verilog,,C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/diff.v,,cube_root,,,,,,,,
+C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/diff.v,1555593610,verilog,,C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/mult.v,,diff,,,,,,,,
+C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/mult.v,1555528277,verilog,,C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/sum.v,,mult,,,,,,,,
+C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sources_1/new/sum.v,1555590969,verilog,,C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab3/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v,,sum,,,,,,,,

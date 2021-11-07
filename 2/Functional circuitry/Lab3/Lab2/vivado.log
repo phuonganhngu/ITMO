@@ -1,0 +1,379 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 18 14:39:54 2019
+# Process ID: 7056
+# Current directory: T:/CommonFiles/STUDIES/Schemat/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent200 T:\CommonFiles\STUDIES\Schemat\Lab2\Lab2.xpr
+# Log file: T:/CommonFiles/STUDIES/Schemat/Lab2/vivado.log
+# Journal file: T:/CommonFiles/STUDIES/Schemat/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Arsenii/Desktop/ITMO/Schemota/Vivado/Lab2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 640.191 ; gain = 85.781
+update_compile_order -fileset sources_1
+close [ open T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v w ]
+add_files T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.sum
+Compiling module xil_defaultlib.cube_root
+Compiling module xil_defaultlib.cube_root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cube_root_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 657.250 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cube_root_tb_behav -key {Behavioral:sim_1:Functional:cube_root_tb} -tclbatch {cube_root_tb.tcl} -view {T:/CommonFiles/STUDIES/Schemat/Lab2/cube_root_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config T:/CommonFiles/STUDIES/Schemat/Lab2/cube_root_tb_behav.wcfg
+source cube_root_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 685.852 ; gain = 28.602
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cube_root_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 685.852 ; gain = 28.602
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 116
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:37]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 335 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 116
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 688.164 ; gain = 0.000
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 116
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.sum
+Compiling module xil_defaultlib.cube_root
+Compiling module xil_defaultlib.cube_root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cube_root_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cube_root_tb_behav -key {Behavioral:sim_1:Functional:cube_root_tb} -tclbatch {cube_root_tb.tcl} -view {T:/CommonFiles/STUDIES/Schemat/Lab2/cube_root_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config T:/CommonFiles/STUDIES/Schemat/Lab2/cube_root_tb_behav.wcfg
+source cube_root_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cube_root_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 708.949 ; gain = 0.000
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 129
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 129
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 128
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 128
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 127
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 128
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 127
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:37]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 128
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 708.949 ; gain = 0.000
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 113
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:37]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 335 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 113
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 708.949 ; gain = 0.000
+step
+Stopped at time : 335 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 114
+step
+Stopped at time : 335 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 115
+step
+Stopped at time : 335 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 60
+step
+Stopped at time : 340 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" Line 18
+step
+Stopped at time : 340 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" Line 18
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" Line 18
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" Line 18
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" Line 31
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" Line 39
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" Line 41
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" Line 30
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" Line 11
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" Line 14
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" Line 10
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 61
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 70
+step
+Stopped at time : 345 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 127
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 128
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 129
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 129
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 130
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:35]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.sum
+Compiling module xil_defaultlib.cube_root
+Compiling module xil_defaultlib.cube_root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cube_root_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 335 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 113
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 708.949 ; gain = 0.000
+run 10 us
+Stopped at time : 355 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 130
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 130
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 113
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 131
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 131
+add_bp {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} 132
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sim_1/new/cube_root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: T:/CommonFiles/STUDIES/Schemat/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 411ceb42b587454596a51741603cd6af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'y_out' [T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v:35]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.sum
+Compiling module xil_defaultlib.cube_root
+Compiling module xil_defaultlib.cube_root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cube_root_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 255 ns : File "T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v" Line 132
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 708.949 ; gain = 0.000
+remove_bps -file {T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/cube_root.v} -line 132
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/diff.v w ]
+add_files T:/CommonFiles/STUDIES/Schemat/Lab2/Lab2.srcs/sources_1/new/diff.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 15:37:21 2019...

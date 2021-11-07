@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+Alice 14 20 60 Student true
+Nick 34 50 100 Farmer true
+Phill 25 26 60 Miner false
+Flora 24 30 40 Florist true
+Nico 34 12 54 Teacher false
+Lily 34 65 32 Baker true
+add_if_max {"name":"Zelda", "age":"110","volum":"110","speed":"110","job":"zz","love":"true"}
+if (w.name.compareTo(wm.name)>0) ok = false;
+                    if (w.age>wm.age) ok = false;
+                    if (w.volum>wm.volum) ok = false;
+                    if (w.speed>wm.speed) ok = false;
+                    if (w.job.compareTo(wm.job)>0) ok = false;  
+                    
+                    if (w.name.compareTo(wm.name)<0) ok = false;
+                    if (w.age<wm.age) ok = false;
+                    if (w.volum<wm.volum) ok = false;
+                    if (w.speed<wm.speed) ok = false;
+                    if (w.job.compareTo(wm.job)<0) ok = false;

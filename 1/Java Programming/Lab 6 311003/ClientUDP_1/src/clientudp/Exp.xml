@@ -1,0 +1,13 @@
+ ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+        try{
+            client.receive(buffer);
+            buffer.flip();
+            int limitBuf = buffer.limit();
+            byte[] byteBuf = new byte[limitBuf];
+            buffer.get(byteBuf, 0, limitBuf);
+            String msg = new String(byteBuf);
+            System.out.println(msg);
+        } catch (PortUnreachableException ex){
+            System.out.println("SERVER IS NOT AVAILABLE AT THE MOMENT, PLEASE TRY AGAIN LATER");
+        }
+        

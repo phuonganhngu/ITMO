@@ -1,0 +1,26 @@
+export ORACLE_HOME=/u01/app/11.2.0/grid
+export ORACLE_SID=+ASM.247412
+export PATH=$ORACLE_HOME/bin:$PATH
+
+pass for db124 i08e2FdB 
+
+sqlplus / as sysasm
+select group_number,name from v$asm_diskgroup;
+
+SELECT SUBSTR(d.name,1,16) AS asmdisk, d.mount_status, d.state, 
+     dg.name AS diskgroup FROM V$ASM_DISKGROUP dg, V$ASM_DISK d 
+     WHERE dg.group_number = d.group_number;
+
+select name, state from v$asm_diskgroup;
+
+CREATE DISKGROUP dangeroushamster NORMAL REDUNDANCY DISK '/u01/dangeroushamster/*';
+
+ CREATE SPFILE FROM PFILE='/u01/app/11.2.0/grid/dbs/init+ASM.247412.ora';
+
+ps -ef | grep pmon
+
+srvctl stop asm
+
+DROP DISKGROUP oldsnail INCLUDING CONTENTS;
+
+CREATE DISKGROUP oldsnail NORMAL REDUNDANCY DISK '/u01/oldsnail/*' ATTRIBUTE 'AU_SIZE'='4M';

@@ -1,0 +1,12 @@
+
+V$DATAFILE	Contains datafile information from the control file
+
+SELECT NAME,  FILE#,    STATUS,   CHECKPOINT_CHANGE# "CHECKPOINT"   FROM   V$DATAFILE;
+
+SELECT FILE_NAME, BLOCKS, TABLESPACE_NAME FROM DBA_DATA_FILES;
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+);

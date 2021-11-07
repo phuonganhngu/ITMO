@@ -1,0 +1,13 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+IN: x =   0, OUT: y =   0
+IN: x =   9, OUT: y =   2
+IN: x =  12, OUT: y =   2
+IN: x =  15, OUT: y =   2
+IN: x =  18, OUT: y =   2
+IN: x =  21, OUT: y =   2
+IN: x =  24, OUT: y =   2
+IN: x =  27, OUT: y =   3
+IN: x =  30, OUT: y =   3
+IN: x =  33, OUT: y =   3
+IN: x = 255, OUT: y =   6
